@@ -8,11 +8,11 @@ DIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 cd "$DIR"
 
 # Remove any existing bindings.
-rm -rf src/abi/*
+rm -rf cmd/abi/*
 
 
 # ERC20 binding.
-abigen --abi abi/spruce-sdk/src/abis/json/ERC20ABI.json --pkg joedex --type ERC20 --out src/abi/ERC20.go
+abigen --abi abi/spruce-sdk/src/abis/json/ERC20ABI.json --pkg joedex --type ERC20 --out cmd/abi/ERC20.go
 # v1 bindings
-abigen --abi abi/spruce-sdk/src/abis/json/JoePairABI.json --pkg joedex --type JoePairV1 --out src/abi/JoePairV1.go
-abigen --abi abi/JoeFactory.json --pkg joedex --type JoeFactoryV1 --out src/abi/JoeFactoryV1.go
+abigen --abi abi/spruce-sdk/src/abis/json/JoePairABI.json --pkg joedex --type JoePairV1 --out cmd/abi/JoePairV1.go
+abigen --abi abi/JoeFactory.json --pkg joedex --type JoeFactoryV1 --out cmd/abi/JoeFactoryV1.go
