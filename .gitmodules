@@ -1,0 +1,6 @@
+[submodule "abi/spruce-sdk"]
+	path = abi/spruce-sdk
+	url = git@github.com:traderjoe-xyz/spruce-sdk.git
+[submodule "abi/spruce-sdk-v2"]
+	path = abi/spruce-sdk-v2
+	url = git@github.com:traderjoe-xyz/spruce-sdk-v2.git
